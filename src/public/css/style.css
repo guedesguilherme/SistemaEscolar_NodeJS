@@ -1,0 +1,256 @@
+body{
+    font-family: "Cabin", sans-serif;
+    color: white;
+    background: #1a1b4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.875rem;
+    font-weight: 300;
+}
+
+h3{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+p{
+    font-size: 1rem;
+}
+
+button{
+    font-size: 1.5rem;
+    background: #3a9efd;
+    color: white;
+    border-radius: 10px;
+    border: #3a9efd;
+    width: 20rem;
+    padding: 10%;
+    cursor: pointer;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+label{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/*-------HOME--------------*/
+.home_container{
+    margin: 5% 5% 50%;
+    width: 60%;
+    background: #3e4491;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+    padding: 5%;
+}
+
+/*----------------------NAVBAR*/
+.navbar{
+    background: #f6f6f6;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar_ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_li{
+    margin-right: 0.8rem;
+    font-size: 1rem;
+}
+
+.navbar_Logo_Title{
+    font-size: 1.875rem;
+}
+
+.navbar_escola{
+    font-size: 1.5rem;
+}
+
+.navbar_home{
+    font-size: 1.5rem;
+}
+.navbar_turma{
+    font-size: 1.5rem;
+}
+.navbar_aluno{
+    font-size: 1.5rem;
+}
+/*------------------------FOOTER*/
+footer{
+    background: #f6f6f6;
+    width: 100%;
+    color: #1a1b4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.footer_title{
+    font-size: 1rem;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.footer_p{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer_copyright{
+    font-size: 1rem;
+    margin: 0;
+}
+/*---------------LISTA DE ALUNOS-----------*/
+.aluno_container{
+    background: #3e4491;
+    width: 60%;
+    padding: 2rem 10% 10%;
+    border-radius: 25px;
+    margin: 5%;
+}
+
+.btn_add_novo_aluno{
+    width: 100%;
+    padding: 1rem;
+    background: #f7a400;
+}
+.card_action_btns_aluno{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+
+}
+
+.btn_alterar{
+    width: 100%;
+    padding: 1rem;
+}
+.btn_deletar{
+    width: 100%;
+    padding: 1rem;
+    background: #C41E3A;
+}
+.a_btn_alterar{
+    width: 48%;
+}
+.a_btn_deletar{
+    width: 48%;
+}
+
+.card_infos_alunos{
+    margin-top: 2rem;
+}
+
+/*----------------TURMA*/
+.turma_container{
+    background: #3e4491;
+    width: 60%;
+    padding: 2rem 10% 10%;
+    border-radius: 25px;
+    margin: 5%;
+}
+
+.btn_add_novo_turma{
+    width: 100%;
+    padding: 1rem;
+    background: #f7a400;
+}
+
+.card_infos_turma{
+    margin-top: 2rem;
+}
+
+/*--------------------ADD ALUNO*/
+.container_add_aluno{
+    background: #3e4491;
+    width: 60%;
+    padding: 2rem 10% 10%;
+    border-radius: 25px;
+    margin: 5%;
+}
+
+.input_add_aluno{
+    display: flex;
+    flex-direction: column;
+}
+
+#matricula{
+    height: 2rem;
+    border-radius: 10px;
+    background: f6f6f6;
+    font-size: 1rem;
+    border: #f6f6f6;
+}
+
+#nome{
+    height: 2rem;
+    border-radius: 10px;
+    background: f6f6f6;
+    font-size: 1rem;
+    border: #f6f6f6;
+}
+
+#turma{
+    height: 2rem;
+    border-radius: 10px;
+    background: f6f6f6;
+    font-size: 1rem;
+    border: #f6f6f6;
+}
+/*--------------------ADD NOVA TURMA*/
+#descricao{
+    height: 2rem;
+    border-radius: 10px;
+    background: f6f6f6;
+    font-size: 1rem;
+    border: #f6f6f6;
+}
+
+/*--------------------EDITAR ALUNO*/
+
+#id_aluno{
+    height: 2rem;
+    border-radius: 10px;
+    background: f6f6f6;
+    font-size: 1rem;
+    border: #f6f6f6;
+}
+
+/*--------------------EDITAR TURMA*/
+
+#id_turma{
+    height: 2rem;
+    border-radius: 10px;
+    background: f6f6f6;
+    font-size: 1rem;
+    border: #f6f6f6;    
+}

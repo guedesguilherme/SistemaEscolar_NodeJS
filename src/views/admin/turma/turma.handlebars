@@ -1,0 +1,30 @@
+       <div class="turma_container">
+            <h2>Lista de Turmas</h2>
+            <hr>
+            <a href="/rota_turma/turma/add">
+                <button class="btn_add_novo_turma">Adicionar Nova Turma</button>    
+            </a>
+
+            {{#each turmas}}
+            <div class="card_turma">
+                <div class="card_infos_turma">
+                    <h3><b>ID: </b>{{id_turma}}</h3>
+                    <h3><b>Descrição: </b>{{descricao}}</h3><br>
+                </div>
+
+                <div class="card_action_btns_aluno">
+                    <a href="/rota_turma/editar_turma/{{id_turma}}" class="a_btn_alterar">
+                        <button class="btn_alterar">
+                            Editar turma
+                        </button>
+                    </a>
+                    <a href="/rota_turma/deletar_turma/{{id_turma}}" class="a_btn_deletar">
+                        <button class="btn_deletar">
+                            Deletar turma
+                        </button>
+                    </a>
+                </div>
+                
+            </div>
+            {{/each}}
+        </div>

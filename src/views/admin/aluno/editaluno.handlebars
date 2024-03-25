@@ -1,0 +1,43 @@
+<div class="container_add_aluno">
+    <h2> Editar Aluno: </h2>
+    <div class="card_add_aluno">
+        <div class="card_info_add_aluno">
+            <form action="/rota_aluno/aluno/editar_aluno" method="POST">
+                {{#each alunos}}
+                <div class="input_add_aluno">
+                <label for="id_aluno">ID: </label>
+                <input type="text" id="id_aluno" name="id_aluno" class="form-control" value="{{id_aluno}}">
+                <br>
+                </div>
+
+                <div class="input_add_aluno">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" class="form-control" value="{{nome}}">
+                <br>
+                </div>
+
+                <div class="input_add_aluno">
+                <label for="matricula">Matricula: </label>
+                <input type="text" id="matricula" name="matricula" class="form-control" value="{{matricula}}">
+                <br>
+                </div>
+                {{/each}}
+                <div class="input_add_aluno">
+                <label for="turma">Turma:</label>
+                <select name="fk_turma" class="custom-select" id="turma">
+                    
+                    {{#each turmas}}
+                    <option value="{{id_turma}}">{{descricao}}</option>
+                    {{else}}
+                    <option value="0">Nenhuma turma registrada</option>
+                    {{/each}}
+                </select>
+                <br>
+                <br>
+                </div>
+                <button type="submit" class="btn_add_novo_aluno">Editar
+                    Aluno</button>
+            </form>
+        </div>
+    </div>
+</div>

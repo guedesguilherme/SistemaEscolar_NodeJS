@@ -1,0 +1,30 @@
+        <div class="aluno_container">
+            <h2>Lista de Alunos</h2>
+            <hr>
+            <a href="/rota_aluno/aluno/add">
+                <button class="btn_add_novo_aluno">Adicionar Novo Aluno</button></a>
+            {{#each alunos}}
+                <div class="card_aluno">
+                    <div class="card_infos_alunos">
+                    <h3 class="info_id_aluno"><b>ID:</b> {{id_aluno}}</h3><br>
+                    <h3><b>Nome:</b> {{nome}} </h3><br>
+                    <h3><b>Matricula:</b> {{matricula}} </h3><br>
+                    <h3><b>Turma:</b> {{descricao}} </h3><br>
+                    </div>
+                    <!--Botão para editar alunos-->
+                    <div class="card_action_btns_aluno">
+                    <a href="/rota_aluno/editar_aluno/{{id_aluno}}" class="a_btn_alterar">
+                        <button class="btn_alterar">
+                            Editar aluno
+                        </button>
+                    </a>
+                    <!--botão para deletar aluno-->
+                    <a href="/rota_aluno/deletar_aluno/{{id_aluno}}" class="a_btn_deletar">
+                        <button class="btn_deletar">
+                            Deletar aluno
+                        </button>
+                    </a>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
